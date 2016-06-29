@@ -1,0 +1,10 @@
+<h2><%= @book.title %></h2>
+<h3><%= @book.author %></h3>
+
+<p>
+You have
+<%= "not" unless @book.has_read %>
+read this book
+</p>
+
+<%= link_to "Delete", book_path(@book), method: :delete %>
